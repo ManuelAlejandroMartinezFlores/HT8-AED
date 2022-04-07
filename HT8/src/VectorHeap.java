@@ -109,13 +109,10 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E>
 		data.setSize(data.size()-1);
 		if (data.size() > 1) pushDownRoot(0);
 		return minVal;
-    }
+	}
 
     @Override
-    public E getFirst() 
-     // pre: !isEmpty()
-    // post: returns the minimum value in the priority queue
-    {    
+    public E getFirst() {
         return data.get(0);
     }
 
@@ -126,7 +123,7 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E>
 
     @Override
     public int size() {
-        return  data.size();
+        return data.size();
     }
 
     @Override
