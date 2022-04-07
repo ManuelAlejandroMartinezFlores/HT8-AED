@@ -22,9 +22,16 @@ public class VectorHeapTest {
     @Test
     void testPaciente(){
         try {
-            PriorityQueue<Paciente> pq = Archivos.leer("src/pacientes.txt");
+            PriorityQueue<Paciente> pq = Archivos.leer("/Users/manuelmartinezflores/Documents/GitHub/HT8-AED/HT8/src/pacientes.txt");
             assertEquals("A", pq.remove().getPrioridad());
+            assertEquals("A", pq.remove().getPrioridad());
+            assertEquals("B", pq.remove().getPrioridad());
+            assertEquals("B", pq.remove().getPrioridad());
+            assertEquals("C", pq.remove().getPrioridad());
+            assertEquals("C", pq.remove().getPrioridad());
+            assertEquals("E", pq.remove().getPrioridad());
         } catch (Exception e){
+            System.out.println(e);
             fail();
         }
 
