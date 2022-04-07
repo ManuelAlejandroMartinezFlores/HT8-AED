@@ -121,14 +121,12 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E>
 
     @Override
     public boolean isEmpty() {
-        // TODO Auto-generated method stub
-        return false;
+        return size() == 0;
     }
 
     @Override
     public int size() {
-        // TODO Auto-generated method stub
-        return 0;
+        return  data.size();
     }
 
     @Override
