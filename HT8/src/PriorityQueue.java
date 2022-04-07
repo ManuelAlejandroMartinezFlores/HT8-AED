@@ -1,3 +1,12 @@
+/**
+ * @author Lourdes Saavedra
+ * @author Manuel Martinez
+ * 
+ * PriorityQueue
+ * Interfaz para cola de prioridad
+ * 
+ */
+
 public interface PriorityQueue<E extends Comparable<E>>
 {
 	public E getFirst();

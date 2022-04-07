@@ -1,9 +1,21 @@
+/**
+ * @author Lourdes Saavedra
+ * @author Manuel Martinez
+ * 
+ * Vista.
+ * Interactua con el usuario.
+ * 
+ */
+
 import java.util.Scanner;
 
 public class Vista {
     
     Scanner scn;
 
+    /**
+     * Constructor
+     */
     Vista(){
         scn = new Scanner(System.in);
     }
@@ -17,6 +29,9 @@ public class Vista {
         return scn.nextLine();
     }
 
+    /**
+     * Obtiene el paciente medio
+     */
     public void getPaciente(){
         mostrarMsg("\nPresione enter para obtener siguiente paciente\n");
         scn.nextLine();

@@ -1,9 +1,24 @@
+/**
+ * @author Lourdes Saavedra
+ * @author Manuel Martinez
+ * 
+ * Archivos
+ * Lee el archivos txt.
+ * 
+ */
+
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.BufferedReader;
 
-public class Archivos{
-
+public class Archivos {
+    
+    /**
+     * Lee el archivo txt y llena un PriorityQueue
+     * @param path del archivo
+     * @return priority queue
+     * @throws IOException
+     */
     public static PriorityQueue<Paciente> leer(String path) throws IOException{
         PriorityQueue<Paciente> pq = new VectorHeap<Paciente>();
         BufferedReader reader = new BufferedReader(new FileReader(path));
@@ -15,4 +30,5 @@ public class Archivos{
         reader.close();
         return pq;
     }
+
 }

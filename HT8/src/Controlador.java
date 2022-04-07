@@ -1,3 +1,12 @@
+/**
+ * @author Lourdes Saavedra
+ * @author Manuel Martinez
+ * 
+ * Controlador.
+ * Contiene el metodo main.
+ * 
+ */
+
 public class Controlador {
     
     public static void main(String[] args){

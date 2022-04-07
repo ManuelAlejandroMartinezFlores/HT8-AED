@@ -1,3 +1,12 @@
+/**
+ * @author Lourdes Saavedra
+ * @author Manuel Martinez
+ * 
+ * Controlador.
+ * Contiene el metodo main.
+ * 
+ */
+
 import java.util.PriorityQueue;
 
 public class Controlador {
