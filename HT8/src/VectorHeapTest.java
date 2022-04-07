@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class VectorHeapTest {
     
     @Test
-    void testInsert(){
+    void testInsertRemove(){
         PriorityQueue<Integer> pq = new VectorHeap<Integer>();
         pq.add(3);
         pq.add(5);
@@ -13,5 +13,22 @@ public class VectorHeapTest {
         pq.add(2);
 
         assertEquals(1, pq.remove());
+        assertEquals(2, pq.remove());
+        assertEquals(3, pq.remove());
+        assertEquals(4, pq.remove());
+        assertEquals(5, pq.remove());
     }
+
+    @Test
+    void testPaciente(){
+        try {
+            PriorityQueue<Paciente> pq = Archivos.leer("src/pacientes.txt");
+            assertEquals("A", pq.remove().getPrioridad());
+        } catch (Exception e){
+            fail();
+        }
+
+        
+    }
+
 }

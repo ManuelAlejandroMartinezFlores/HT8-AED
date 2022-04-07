@@ -129,6 +129,6 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E>
     @Override
     public void clear() {
         // TODO Auto-generated method stub
-        
+        data.removeAllElements();
     }
 }
